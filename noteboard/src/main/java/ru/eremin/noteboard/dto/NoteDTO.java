@@ -5,7 +5,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.jetbrains.annotations.NotNull;
-import ru.eremin.noteboard.entity.*;
+import ru.eremin.noteboard.entity.Comment;
+import ru.eremin.noteboard.entity.Note;
+import ru.eremin.noteboard.entity.NoteStatus;
+import ru.eremin.noteboard.entity.NoteType;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;

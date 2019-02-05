@@ -7,7 +7,10 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.*;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 /**
  * @autor Artem Eremin on 16.12.2018.

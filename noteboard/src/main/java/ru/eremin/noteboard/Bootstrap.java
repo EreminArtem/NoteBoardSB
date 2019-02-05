@@ -14,12 +14,14 @@ import ru.eremin.noteboard.service.api.IUserService;
 @Component
 public class Bootstrap implements InitializingBean {
 
-    @Autowired
     private BCryptPasswordEncoder passwordEncoder;
-
-    @Autowired
     private IUserService userService;
 
+    @Autowired
+    public Bootstrap(final BCryptPasswordEncoder passwordEncoder, final IUserService userService) {
+        this.passwordEncoder = passwordEncoder;
+        this.userService = userService;
+    }
 
     @Override
     public void afterPropertiesSet() throws Exception {

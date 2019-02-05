@@ -1,7 +1,10 @@
 package ru.eremin.noteboard.service.api;
 
-import ru.eremin.noteboard.dto.*;
-import ru.eremin.noteboard.entity.*;
+import ru.eremin.noteboard.dto.BoardDTO;
+import ru.eremin.noteboard.dto.CategoryDTO;
+import ru.eremin.noteboard.dto.NoteDTO;
+import ru.eremin.noteboard.dto.UserDTO;
+import ru.eremin.noteboard.entity.Note;
 
 import java.util.List;
 

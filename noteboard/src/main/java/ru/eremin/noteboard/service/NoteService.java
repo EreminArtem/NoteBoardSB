@@ -5,8 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.eremin.noteboard.dto.*;
-import ru.eremin.noteboard.entity.*;
+import ru.eremin.noteboard.dto.BoardDTO;
+import ru.eremin.noteboard.dto.CategoryDTO;
+import ru.eremin.noteboard.dto.NoteDTO;
+import ru.eremin.noteboard.dto.UserDTO;
+import ru.eremin.noteboard.entity.Board;
+import ru.eremin.noteboard.entity.Category;
+import ru.eremin.noteboard.entity.Note;
+import ru.eremin.noteboard.entity.User;
 import ru.eremin.noteboard.repository.*;
 import ru.eremin.noteboard.service.api.INoteService;
 

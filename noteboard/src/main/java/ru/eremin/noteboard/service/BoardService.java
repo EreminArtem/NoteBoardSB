@@ -138,8 +138,8 @@ public class BoardService implements IBoardService {
         board.setDate(boardDTO.getDate());
         final User author = userRepository.findUserById(boardDTO.getAuthorId());
         if (author != null) board.setAuthor(author);
-        board.setNotes(noteRepository.findNotesByBoard(board));
-        board.setCategories(categoryRepository.findCategoriesByBoard(board));
+        if(boardDTO.getNoteIds() != null) board.setNotes(noteRepository.findNotesByBoard(board));
+        if(boardDTO.getCategoryIds() != null) board.setCategories(categoryRepository.findCategoriesByBoard(board));
         return board;
     }
 }

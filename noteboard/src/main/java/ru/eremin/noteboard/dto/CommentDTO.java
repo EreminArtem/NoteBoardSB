@@ -10,7 +10,6 @@ import ru.eremin.noteboard.entity.User;
 
 import java.io.Serializable;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Objects;
 
 /**
